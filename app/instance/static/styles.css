@@ -1,0 +1,77 @@
+@charset 'UTF=8';
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: #2BC4F0;
+    --red: #FA5641;
+    --green: #18D860;
+    --header-bg: #080909;
+    --body-bg: #101112;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    min-width: 100vw;
+    color: white;
+    background-color: var(--body-bg);
+    font-family: "Poppins";
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    top: 0px;
+    background-color: var(--header-bg);
+}
+
+#header-container {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    width: 96vw;
+    height: 100%;
+    margin: auto;
+}
+
+#header-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.spotify-tag h3 span {
+    color: var(--green);
+    padding-right: 3px;
+} 
+
+.spotify-tag h3::after, #login-wrapper h3::after {
+    content: url("/static/spotify-logo.png");
+}
+
+main {
+    width: 100vw;
+    min-width: 100vw;
+}
+
+.main-container {
+    width: auto;
+    height: auto;
+    margin: auto;
+    
+}
+
+#error {
+    color: var(--red);
+}
+
+.site-title a {
+    color: white;
+    text-decoration: none;
+}

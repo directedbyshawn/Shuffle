@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shuffle - Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/static/styles.css" type="text/css" rel="stylesheet">
+        <link href="/static/playlist.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="header-container">
+                <div id="header-wrapper">
+                    <div class="site-title">
+                        <a href="/"><h3>Shuffle</h3></a>
+                    </div>
+                    <div class="spotify-tag">
+                        <h3>Powered by <span>Spotify</span></h3>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="main-container">
+                <div id="main-wrapper">
+                    <div id="playlist-info">
+                        <img src={{ data['playlist'].get_image() }} alt="pfp" id="image">
+                        <h1 id="name">{{ data['playlist'].get_name() }}</h1>
+                        {% if data['playlist'].get_description() != "" %}
+                            <h3 id="description">{{ data['playlist'].get_description() }}</h3>
+                        {% endif %}
+                        <h4 id="track-count">Total tracks: {{ data['playlist'].get_total_songs() }}</h4>
+                    </div>
+                    <div id="songs-wrapper">
+                        <h2>Songs</h2>
+                        {% for song in data['playlist'].get_songs() %}
+                            <div class="song">
+                                <img alt="song-cover" class="song-cover" src={{ song.get_image() }}>
+                                <div class="song-info">
+                                    <p class="song-artist">{{ song.get_artist() }}</p>
+                                    <p class="song-title">{{ song.get_title() }}</p>
+                                    <p class="song-duration">{{ song.get_duration()[0] }} mins, {{ song.get_duration()[1] }} secs.</p>
+                                </div>
+                            </div>  
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-wrapper">
+                <div class="site-title">
+                    <h2>Shuffle</h2>
+                </div>
+                <div class="spotify-tag">
+                    <h3>Powered by <span>Spotify</span></h3>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+@charset 'UTF=8';
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: #2BC4F0;
+    --red: #FA5641;
+    --green: #18D860;
+    --header-bg: #080909;
+    --body-bg: #101112;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 110px;
+}
+
+#main-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-wrapper {
+    width: 50vw;
+}
+
+#profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pfp {
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px black;
+}
+
+#name {
+    font-size: 30pt;
+    margin: 0px;
+    padding-top: 3px;
+}
+
+#username {
+    margin: 0px;
+    padding-bottom: 2px;
+}
+
+#playlist-wrapper {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#playlist-wrapper h2 {
+    margin: 0px;
+    padding-bottom: .5%;
+}
+
+.playlist {
+    width: 60%;
+    padding: 2.3%;
+    margin: 10px;
+    background-color: var(--header-bg);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.playlist-image {
+    width: 80%;
+    height: auto;
+    border-radius: 30%;
+    margin-top: 6px;
+}
+
+.playlist-name {
+    font-weight: 600;
+    font-size: 20pt;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#footer-wrapper {
+    padding: 2%;
+}
+
+#footer-wrapper .site-title h2 {
+    margin: 0px;
+    padding: .8%;
+}
+
+#footer-wrapper .spotify-tag h3 {
+    margin: 0px;
+}

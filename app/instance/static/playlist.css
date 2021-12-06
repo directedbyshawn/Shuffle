@@ -1,0 +1,122 @@
+@charset 'UTF=8';
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: #2BC4F0;
+    --red: #FA5641;
+    --green: #18D860;
+    --header-bg: #080909;
+    --body-bg: #101112;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 110px;
+}
+
+#main-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-wrapper {
+    width: 50vw;
+}
+
+#playlist-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#image {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px black;
+}
+
+#name {
+    font-size: 30pt;
+    margin: 0px;
+    padding-top: 3px;
+}
+
+#description {
+    margin: 0px;
+    padding-bottom: 2px;
+}
+
+#songs-wrapper h2 {
+    text-align: center;
+}
+
+#songs-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.song {
+    background-color: var(--header-bg);
+    width: 75%;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "cover song-info";
+}
+
+.song-cover {
+    width: 70%;
+    height: auto;
+    border-radius: 30%;
+    grid-area: cover;
+}
+
+.song-info {
+    grid-area: song-info;
+}
+
+.song-artist {
+    margin: 0px;
+}
+
+.song-title {
+    margin: 0px;
+}
+
+.song-duration {
+    margin: 0px;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#footer-wrapper {
+    padding: 2%;
+}
+
+#footer-wrapper .site-title h2 {
+    margin: 0px;
+    padding: .8%;
+}
+
+#footer-wrapper .spotify-tag h3 {
+    margin: 0px;
+}
