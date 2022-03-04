@@ -7,4 +7,4 @@ Shuffle is a Spotify Web Interface that allows you to view your playlists, and a
 Currently this project is not setup for other users to easily test, but it will be in the future. If you wish to mess with the code yourself, the dependencies are in `requirements.txt` so install from there. If you have experience with the Spotify Web API, you can link your account by creating a `creds.txt` file in the app directory. On the first line, place your client id. On the second line, your client secret. Doing this will allow you to launch the app yourself and view your account data.
 
 ### Demo
-Since it is not quite easy for other users to test this project yet, I recorded a short demo which can be found <a alt="demo link" href="https://www.youtube.com/watch?v=XUqPH7kG1Hs" style="text-decoration: none;" target="_blank">here</a>.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XUqPH7kG1Hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
